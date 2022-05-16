@@ -11,7 +11,6 @@ body {
   background-color: var(--light-dg-color);
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   letter-spacing: 0.03em;
 }
 
@@ -90,7 +89,6 @@ body {
   text-transform: uppercase;
 }
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -112,7 +110,6 @@ body {
   text-align: center;
 }
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -145,7 +142,6 @@ body {
 }
 .projects .project-p {
   color: var(--main-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
 }
@@ -168,7 +164,6 @@ body {
 
 .address .link {
   color: rgb(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
