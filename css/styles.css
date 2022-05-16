@@ -17,7 +17,7 @@ body {
 
 /* Logo */
 .logo {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -159,7 +159,7 @@ body {
   color: var(--taxt-on-bg);
 }
 .footer-logo {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
