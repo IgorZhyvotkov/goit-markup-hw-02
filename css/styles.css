@@ -6,5 +6,89 @@
     text on bg  color: #FFFFFF;
     dark bg     background: #2F303A;
     light bg    background: #E5E5E5;
+
+    h1,h2,h3,h4,h5,h6 {
+  color: var(--secondary-text-color)
+}
     
 */
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --taxt-on-bg: #ffffff;
+  --dark-bg-color: #2f303a;
+  --light-dg-color: #e5e5e5;
+}
+
+body {
+  color: var(--main-text-color);
+}
+main{
+  background-color: var(--light-dg-color)
+}
+
+/* Logo */
+.logo-part {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--secondary-text-color);
+}
+
+/* Navigation */
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+.contacts .link {
+  color: var(--main-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark-bg-color);
+}
+.hero-title {
+  color: var(--taxt-on-bg);
+}
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--taxt-on-bg);
+}
+/* Sections */
+.section .tittle{
+  color: var(--secondary-text-color);
+}
+
+/* Filter */
+.filter .button {
+  background-color: var(--light-dg-color);
+  color: var(--secondary-text-color);
+}
+.filter .button:hover,
+.filter .button:focus {
+  background-color: var(--accent-color);
+  color: var(--taxt-on-bg);
+}
+
+/* Footer */
+.page-footer {
+  background-color: var(--dark-bg-color);
+}
+.footer-logo,
+.map {
+  color: var(--taxt-on-bg);
+}
+.address .link {
+  color: rgb(255, 255, 255, 0.6);
+}
