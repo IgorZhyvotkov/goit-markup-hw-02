@@ -15,12 +15,24 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Logo */
@@ -34,7 +46,7 @@ body {
 .logo-part {
   color: var(--accent-color);
 }
-.logo {
+.logo.link {
   color: var(--logo-black);
 }
 
@@ -62,6 +74,7 @@ body {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Hero */
@@ -88,6 +101,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 /* Features */
 .features .tittle {
@@ -110,6 +124,9 @@ body {
   text-align: center;
 }
 /* Team */
+.team {
+  background-color: var(--light-bg-color);
+}
 .team .names {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -123,8 +140,9 @@ body {
   text-align: center;
 }
 
-/* Filter */
-.filter .button {
+/* Projects */
+
+.projects .button {
   background-color: var(--light-dg-color);
   color: var(--secondary-text-color);
   font-family: inherit;
@@ -132,15 +150,16 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-}
-.filter .button:hover,
-.filter .button:focus {
-  background-color: var(--accent-color);
-  color: var(--taxt-on-bg);
   cursor: pointer;
+  letter-spacing: inherit;
 }
 
-/* Projects */
+.projects .button:hover,
+.projects .button:focus {
+  background-color: var(--accent-color);
+  color: var(--taxt-on-bg);
+  }
+
 .projects .tittle {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -158,14 +177,14 @@ body {
 .page-footer {
   background-color: var(--dark-bg-color);
 }
+
 .footer-logo.link,
-.address.list .map.link{
+.address.list .map.link {
   color: var(--taxt-on-bg);
 }
 
 .footer-logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway" sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -174,5 +193,12 @@ body {
 .address.list .link {
   color: rgb(255, 255, 255, 0.6);
   line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
+}
+
+.address.list .link:hover,
+.address.list .link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
 }
